@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Flex</title>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#">Logo</a>
+            <label for="dropdown-collapse" class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <input type="checkbox" id="dropdown-collapse">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <h1>Section Flexbox</h1>
+
+        <section class="banners">
+            <div class="banner">
+                <img src="./img/lobo1.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo2.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo3.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo2.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo1.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo3.jpg">
+                <p>Legenda</p>
+            </div>
+        </section>
+
+        <h1>Section Grid</h1>
+
+        <section class="banners-grid">
+            <div class="banner">
+                <img src="./img/lobo1.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo2.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo3.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo2.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo1.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo3.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo2.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo1.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner">
+                <img src="./img/lobo3.jpg">
+                <p>Legenda</p>
+            </div>
+            <div class="banner propaganda">
+                <img src="./img/lobo4.jpg" class="desktop">
+                <img src="./img/lobo3.jpg" class="lower">
+                <p>Propaganda</p>
+            </div>
+        </section>
+
+        <h1>Section Grid 2</h1>
+
+        <section class="grid2">
+            <div class="video">
+                <img src="./img/lobo1.jpg">
+                <h2>Tutorial como fazer tutorial</h2>
+            </div>
+            <hr>
+            <aside>
+                <div>
+                    <img src="./img/lobo2.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo3.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo1.jpg">
+                    <p>Legenda</p>
+                </div>
+                <div>
+                    <img src="./img/lobo3.jpg">
+                    <p>Legenda</p>
+                </div>
+            </aside>
+        </section>
+
+        <h1>Section Grid 3</h1>
+
+        <section class="grid3">
+            <div>
+                <img src="./img/lobo4.jpg">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="./img/lobo1.jpg">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="./img/lobo2.jpg">
+                <p>Legenda</p>
+            </div>
+        </section>
+
+        <script>
+            $(window).on('scroll', () => {
+                $(window).scrollTop() ?
+                    $('header').addClass('primary') :
+                    $('header').removeClass('primary')
+                ;
+            });
+
+            $('header #dropdown-collapse').change(() => {
+                $('header .button').toggleClass('dropdown-show')
+            });
+        </script>
+    </body>
+</html>

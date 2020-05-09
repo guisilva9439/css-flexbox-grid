@@ -1,0 +1,17 @@
+{
+  "name": "css-flexbox-grid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/guisilva9439/css-flexbox-grid.git",
+  "author": "Guilherme Silva <guisilva9439@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+      "start": "nodemon index"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
